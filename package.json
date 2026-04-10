@@ -1,0 +1,27 @@
+{
+  "name": "aws-database-agent-skills",
+  "version": "0.1.0",
+  "description": "Agent Skills for AWS database services — ElastiCache, DynamoDB, Aurora, and more",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meet-bhagdev/aws-database-agent-skills"
+  },
+  "keywords": [
+    "ai",
+    "skills",
+    "ai-agents",
+    "aws",
+    "dynamodb",
+    "elasticache",
+    "aurora",
+    "valkey",
+    "databases"
+  ],
+  "devDependencies": {
+    "vitest": "^3.0.0"
+  },
+  "scripts": {
+    "test": "vitest run"
+  }
+}
