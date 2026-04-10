@@ -8,10 +8,9 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <nav>
 <div class="nav-inner">
-  <div class="nav-logo">⚡ AWS Database <span>Agent Skills</span></div>
+  <div class="nav-logo"><div class="nav-logo-icon">⚡</div>AWS Database <em>Agent Skills</em></div>
   <div class="nav-links">
     <a href="#skills">Skills</a>
     <a href="#how-it-works">How It Works</a>
@@ -24,233 +23,213 @@
 </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="hero-badge">🔥 Open Source <span>·</span> Agent Skills Standard <span>·</span> MIT Licensed</div>
-  <h1>Teach AI agents to build on<br>AWS databases <em>correctly</em></h1>
-  <p>Open-source instructions that help AI coding agents avoid the most common and expensive mistakes with DynamoDB, ElastiCache, Aurora, and more.</p>
-  <div class="hero-actions">
-    <a href="#skills" class="btn btn-primary">Explore Skills ↓</a>
-    <a href="https://github.com/meet-bhagdev/aws-database-agent-skills" class="btn btn-secondary" target="_blank">View on GitHub</a>
-  </div>
-
-  <div class="install-box">
-    <div class="install-header">
-      <div class="install-dot"></div><div class="install-dot"></div><div class="install-dot"></div>
-      <span>Terminal</span>
+  <div class="hero-bg"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+  <div class="hero-content">
+    <div class="hero-badge"><span class="dot"></span> Open Source · Agent Skills Standard · MIT Licensed</div>
+    <h1>Teach AI agents to build on<br>AWS databases <span class="gradient">correctly</span></h1>
+    <p>Open-source instructions that help AI coding agents avoid the most common and expensive mistakes with DynamoDB, ElastiCache, Aurora, and more.</p>
+    <div class="hero-actions">
+      <a href="#skills" class="btn btn-primary">Explore Skills ↓</a>
+      <a href="https://github.com/meet-bhagdev/aws-database-agent-skills" class="btn btn-secondary" target="_blank">View on GitHub</a>
     </div>
-    <div class="install-body">
-      <button class="copy-btn">Copy</button>
-      <div class="comment"># Install all skills</div>
-      <div class="cmd">npx skills add meet-bhagdev/aws-database-agent-skills</div>
+    <div class="install-box">
+      <div class="install-header">
+        <div class="install-dot dot-red"></div><div class="install-dot dot-yellow"></div><div class="install-dot dot-green"></div>
+        <span>Terminal</span>
+      </div>
+      <div class="install-body">
+        <button class="copy-btn">Copy</button>
+        <div class="comment"># Install all skills</div>
+        <div class="cmd">npx skills add meet-bhagdev/aws-database-agent-skills</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- COMPAT -->
-<div class="compat">
-  <p>Compatible with 18+ AI agents</p>
-  <div class="compat-logos">
-    <span>Claude Code</span>
-    <span>GitHub Copilot</span>
-    <span>Cursor</span>
-    <span>Cline</span>
-    <span>Windsurf</span>
-    <span>Gemini CLI</span>
-    <span>VS Code</span>
-    <span>Kiro</span>
+<div class="stats">
+  <div class="stats-inner">
+    <div><div class="stat-num orange" data-count="40">0</div><div class="stat-label">Best Practice Guides</div></div>
+    <div><div class="stat-num blue" data-count="4">0</div><div class="stat-label">Database Skills</div></div>
+    <div><div class="stat-num purple" data-count="18" data-suffix="+">0</div><div class="stat-label">Compatible Agents</div></div>
   </div>
 </div>
 
-<!-- SKILLS -->
+<div class="compat">
+  <div class="compat-label">Compatible with 18+ AI agents</div>
+  <div class="compat-logos">
+    <span>Claude Code</span><span>GitHub Copilot</span><span>Cursor</span><span>Cline</span><span>Windsurf</span><span>Gemini CLI</span><span>VS Code</span><span>Kiro</span>
+  </div>
+</div>
+
 <section id="skills">
 <div class="container">
-  <div class="section-label">Available Skills</div>
-  <div class="section-title">Four skills. 40 reference guides.</div>
-  <div class="section-desc">Each skill teaches agents the critical best practices for a specific AWS database service. Install all of them or just the ones you need.</div>
-
+  <div class="section-label anim">Available Skills</div>
+  <div class="section-title anim">Four skills. 40 reference guides.</div>
+  <div class="section-desc anim">Each skill teaches agents the critical best practices for a specific AWS database service. Install all of them or just the ones you need.</div>
   <div class="skills-grid">
-
-    <div class="skill-card">
-      <div class="skill-icon icon-elasticache">🔴</div>
-      <h3>aws-elasticache</h3>
+    <div class="skill-card anim">
+      <div class="skill-top"><div class="skill-icon icon-elasticache">🔴</div><h3>aws-elasticache <span class="cnt">13 refs</span></h3></div>
       <div class="skill-desc">Best practices for Amazon ElastiCache with Valkey — connection management, data structure selection, caching patterns, cluster mode, and performance optimization.</div>
-      <div class="skill-tags">
-        <span>Valkey</span><span>Caching</span><span>Session Stores</span><span>Pub/Sub</span><span>Cluster Mode</span><span>Pipelining</span>
-      </div>
-      <div class="skill-install">
-        <code>npx skills add …/aws-database-agent-skills --skill aws-elasticache</code>
-        <button data-copy="npx skills add meet-bhagdev/aws-database-agent-skills --skill aws-elasticache" title="Copy">📋</button>
-      </div>
+      <div class="skill-tags"><span>Valkey</span><span>Caching</span><span>Session Stores</span><span>Pub/Sub</span><span>Cluster Mode</span><span>Pipelining</span></div>
+      <div class="skill-install"><code>npx skills add …/aws-database-agent-skills --skill aws-elasticache</code><button class="skill-copy" data-copy="npx skills add meet-bhagdev/aws-database-agent-skills --skill aws-elasticache">📋</button></div>
     </div>
-
-    <div class="skill-card">
-      <div class="skill-icon icon-dynamodb">🔵</div>
-      <h3>aws-dynamodb</h3>
+    <div class="skill-card anim">
+      <div class="skill-top"><div class="skill-icon icon-dynamodb">🔵</div><h3>aws-dynamodb <span class="cnt">12 refs</span></h3></div>
       <div class="skill-desc">Best practices for Amazon DynamoDB — data modeling, query patterns, performance tuning, and operational patterns like Streams, TTL, and transactions.</div>
-      <div class="skill-tags">
-        <span>NoSQL</span><span>Partition Keys</span><span>GSIs</span><span>Streams</span><span>Transactions</span><span>TTL</span>
-      </div>
-      <div class="skill-install">
-        <code>npx skills add …/aws-database-agent-skills --skill aws-dynamodb</code>
-        <button data-copy="npx skills add meet-bhagdev/aws-database-agent-skills --skill aws-dynamodb" title="Copy">📋</button>
-      </div>
+      <div class="skill-tags"><span>NoSQL</span><span>Partition Keys</span><span>GSIs</span><span>Streams</span><span>Transactions</span><span>TTL</span></div>
+      <div class="skill-install"><code>npx skills add …/aws-database-agent-skills --skill aws-dynamodb</code><button class="skill-copy" data-copy="npx skills add meet-bhagdev/aws-database-agent-skills --skill aws-dynamodb">📋</button></div>
     </div>
-
-    <div class="skill-card">
-      <div class="skill-icon icon-aurora">🟣</div>
-      <h3>aws-aurora</h3>
+    <div class="skill-card anim">
+      <div class="skill-top"><div class="skill-icon icon-aurora">🟣</div><h3>aws-aurora <span class="cnt">11 refs</span></h3></div>
       <div class="skill-desc">Best practices for Amazon Aurora (MySQL and PostgreSQL) — connection management, scaling, Serverless v2, high availability, and query optimization.</div>
-      <div class="skill-tags">
-        <span>PostgreSQL</span><span>MySQL</span><span>RDS Proxy</span><span>Serverless v2</span><span>Failover</span><span>Performance Insights</span>
-      </div>
-      <div class="skill-install">
-        <code>npx skills add …/aws-database-agent-skills --skill aws-aurora</code>
-        <button data-copy="npx skills add meet-bhagdev/aws-database-agent-skills --skill aws-aurora" title="Copy">📋</button>
-      </div>
+      <div class="skill-tags"><span>PostgreSQL</span><span>MySQL</span><span>RDS Proxy</span><span>Serverless v2</span><span>Failover</span><span>Performance Insights</span></div>
+      <div class="skill-install"><code>npx skills add …/aws-database-agent-skills --skill aws-aurora</code><button class="skill-copy" data-copy="npx skills add meet-bhagdev/aws-database-agent-skills --skill aws-aurora">📋</button></div>
     </div>
-
-    <div class="skill-card">
-      <div class="skill-icon icon-databases">🟢</div>
-      <h3>aws-databases</h3>
+    <div class="skill-card anim">
+      <div class="skill-top"><div class="skill-icon icon-databases">🟢</div><h3>aws-databases <span class="cnt">4 refs</span></h3></div>
       <div class="skill-desc">Umbrella skill for choosing the right AWS database and cross-cutting concerns — IAM authentication, VPC connectivity, and SDK configuration.</div>
-      <div class="skill-tags">
-        <span>Service Selection</span><span>IAM Auth</span><span>VPC</span><span>SDK Config</span><span>Security</span>
-      </div>
-      <div class="skill-install">
-        <code>npx skills add …/aws-database-agent-skills --skill aws-databases</code>
-        <button data-copy="npx skills add meet-bhagdev/aws-database-agent-skills --skill aws-databases" title="Copy">📋</button>
+      <div class="skill-tags"><span>Service Selection</span><span>IAM Auth</span><span>VPC</span><span>SDK Config</span><span>Security</span></div>
+      <div class="skill-install"><code>npx skills add …/aws-database-agent-skills --skill aws-databases</code><button class="skill-copy" data-copy="npx skills add meet-bhagdev/aws-database-agent-skills --skill aws-databases">📋</button></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- BEFORE/AFTER -->
+<section class="before-after">
+<div class="ba-inner container">
+  <div class="section-label ba-label anim">See The Difference</div>
+  <div class="ba-title anim">What your AI agent generates</div>
+  <div class="ba-desc anim">Without skills vs with skills installed</div>
+  <div class="ba-grid anim">
+    <div class="ba-panel">
+      <h3><span class="ba-bad">✗</span> Without Skills</h3>
+      <div class="ba-code">
+<span class="hl-dim"># Agent uses Scan — reads entire table</span>
+response = table.<span class="hl-bad">scan</span>(
+    <span class="hl-bad">FilterExpression</span>=Attr('customer_id').eq('cust-789')
+)
+<span class="hl-dim"># 💸 Reads ALL items, pays for every one</span>
+<span class="hl-dim"># 🐌 Gets slower as table grows</span>
       </div>
     </div>
-
+    <div class="ba-arrow">→</div>
+    <div class="ba-panel">
+      <h3><span class="ba-good">✓</span> With Skills</h3>
+      <div class="ba-code">
+<span class="hl-dim"># Agent uses Query — reads only matching partition</span>
+response = table.<span class="hl-good">query</span>(
+    IndexName='customer-orders-index',
+    <span class="hl-good">KeyConditionExpression</span>=Key('customer_id').eq('cust-789'),
+)
+<span class="hl-dim"># ✅ 100-1000x cheaper and faster</span>
+      </div>
+    </div>
   </div>
 </div>
 </section>
 
 <!-- HOW IT WORKS -->
-<section id="how-it-works" style="background:var(--bg2)">
+<section id="how-it-works">
 <div class="container">
-  <div class="section-label">How It Works</div>
-  <div class="section-title">Three steps to better AI-generated code</div>
-  <div class="section-desc">Agent Skills use progressive disclosure — metadata loads at startup, full instructions load only when relevant, references load on demand.</div>
-
+  <div class="section-label anim">How It Works</div>
+  <div class="section-title anim">Three steps to better AI-generated code</div>
+  <div class="section-desc anim">Agent Skills use progressive disclosure — metadata loads at startup, full instructions load only when relevant, references load on demand.</div>
   <div class="how-grid">
-    <div class="how-step">
-      <div class="how-num">1</div>
-      <h3>Install</h3>
-      <p>Run <code style="color:var(--accent);font-family:var(--mono);font-size:13px">npx skills add</code> in your project. Skills are saved to your project directory and work with any compatible AI agent.</p>
-    </div>
-    <div class="how-step">
-      <div class="how-num">2</div>
-      <h3>Code</h3>
-      <p>Ask your AI agent to work with DynamoDB, ElastiCache, or Aurora. The agent automatically detects the relevant skill and loads the instructions.</p>
-    </div>
-    <div class="how-step">
-      <div class="how-num">3</div>
-      <h3>Ship</h3>
-      <p>The agent generates code that follows AWS best practices — correct connection pooling, proper error handling, efficient query patterns, and secure configurations.</p>
-    </div>
+    <div class="how-step anim"><div class="how-num">1</div><h3>Install</h3><p>Run <code style="color:var(--accent);font-family:var(--mono);font-size:13px">npx skills add</code> in your project. Skills are saved to your project directory and work with any compatible AI agent.</p></div>
+    <div class="how-step anim"><div class="how-num">2</div><h3>Code</h3><p>Ask your AI agent to work with DynamoDB, ElastiCache, or Aurora. The agent automatically detects the relevant skill and loads the instructions.</p></div>
+    <div class="how-step anim"><div class="how-num">3</div><h3>Ship</h3><p>The agent generates code that follows AWS best practices — correct connection pooling, proper error handling, efficient query patterns, and secure configurations.</p></div>
   </div>
 </div>
 </section>
 
 <!-- REFERENCES -->
-<section id="references">
+<section id="references" style="background:var(--bg2);border-top:1px solid var(--border)">
 <div class="container">
-  <div class="section-label">Reference Library</div>
-  <div class="section-title">40 best practice guides, prioritized by impact</div>
-  <div class="section-desc">Every reference shows the incorrect pattern, the correct pattern, and why it matters — with Python and Node.js code examples.</div>
+  <div class="section-label anim">Reference Library</div>
+  <div class="section-title anim">40 best practice guides, prioritized by impact</div>
+  <div class="section-desc anim">Every reference shows the incorrect pattern, the correct pattern, and why it matters — with Python and Node.js examples.</div>
 
-  <!-- ElastiCache -->
-  <div class="ref-section">
-    <div class="ref-header open">
-      <h3>🔴 aws-elasticache <span class="ref-count">13 references</span></h3>
-      <span class="chevron">▾</span>
-    </div>
-    <div class="ref-body open">
-      <div class="ref-row"><span class="ref-name">Never Use KEYS in Production</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Blocks the single-threaded engine for seconds</span></div>
-      <div class="ref-row"><span class="ref-name">Use Connection Pooling</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Eliminates per-request connection overhead</span></div>
-      <div class="ref-row"><span class="ref-name">Use Cluster-Aware Clients</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Prevents MOVED/ASK errors in cluster mode</span></div>
-      <div class="ref-row"><span class="ref-name">Avoid Big Keys</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Causes uneven memory and slow operations</span></div>
-      <div class="ref-row"><span class="ref-name">Use Pipelining for Batch Ops</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">5-10x throughput improvement</span></div>
-      <div class="ref-row"><span class="ref-name">Configure Timeouts</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Prevents threads hanging on unresponsive nodes</span></div>
-      <div class="ref-row"><span class="ref-name">Choose the Right Data Structure</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">50-90% memory savings with native structures</span></div>
-      <div class="ref-row"><span class="ref-name">Implement Cache-Aside Correctly</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Prevents stale data and cascading DB load</span></div>
-      <div class="ref-row"><span class="ref-name">Cache Invalidation Strategies</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Prevents serving stale data after writes</span></div>
-      <div class="ref-row"><span class="ref-name">Prevent Thundering Herd</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Prevents DB overload on popular key expiry</span></div>
-      <div class="ref-row"><span class="ref-name">Minimize Serialization Overhead</span><span class="ref-impact"><span class="impact-medium">MEDIUM</span></span><span class="ref-desc">2-5x payload reduction with efficient formats</span></div>
-      <div class="ref-row"><span class="ref-name">Hash Tags for Multi-Key Ops</span><span class="ref-impact"><span class="impact-medium">MEDIUM</span></span><span class="ref-desc">Enables transactions in cluster mode</span></div>
-      <div class="ref-row"><span class="ref-name">Provisioning Gotchas</span><span class="ref-impact"><span class="impact-medium">MEDIUM</span></span><span class="ref-desc">Cluster mode, encryption, node types</span></div>
-    </div>
+  <div class="ref-section anim"><div class="ref-header open"><h3>🔴 aws-elasticache <span class="ref-count">13 references</span></h3><span class="chevron">▾</span></div>
+  <div class="ref-body open">
+    <div class="ref-row"><span class="ref-name">Never Use KEYS in Production</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Blocks the single-threaded engine for seconds</span></div>
+    <div class="ref-row"><span class="ref-name">Use Connection Pooling</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Eliminates per-request connection overhead</span></div>
+    <div class="ref-row"><span class="ref-name">Use Cluster-Aware Clients</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Prevents MOVED/ASK errors in cluster mode</span></div>
+    <div class="ref-row"><span class="ref-name">Avoid Big Keys</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Causes uneven memory and slow operations</span></div>
+    <div class="ref-row"><span class="ref-name">Use Pipelining for Batch Ops</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">5-10x throughput improvement</span></div>
+    <div class="ref-row"><span class="ref-name">Configure Timeouts</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Prevents threads hanging on unresponsive nodes</span></div>
+    <div class="ref-row"><span class="ref-name">Choose the Right Data Structure</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">50-90% memory savings with native structures</span></div>
+    <div class="ref-row"><span class="ref-name">Implement Cache-Aside Correctly</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Prevents stale data and cascading DB load</span></div>
+    <div class="ref-row"><span class="ref-name">Cache Invalidation Strategies</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Prevents serving stale data after writes</span></div>
+    <div class="ref-row"><span class="ref-name">Prevent Thundering Herd</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Prevents DB overload on popular key expiry</span></div>
+    <div class="ref-row"><span class="ref-name">Minimize Serialization Overhead</span><span class="ref-impact"><span class="impact-medium">MEDIUM</span></span><span class="ref-desc">2-5x payload reduction with efficient formats</span></div>
+    <div class="ref-row"><span class="ref-name">Hash Tags for Multi-Key Ops</span><span class="ref-impact"><span class="impact-medium">MEDIUM</span></span><span class="ref-desc">Enables transactions in cluster mode</span></div>
+    <div class="ref-row"><span class="ref-name">Provisioning Gotchas</span><span class="ref-impact"><span class="impact-medium">MEDIUM</span></span><span class="ref-desc">Cluster mode, encryption, node types</span></div>
+  </div></div>
+
+  <div class="ref-section anim"><div class="ref-header"><h3>🔵 aws-dynamodb <span class="ref-count">12 references</span></h3><span class="chevron">▾</span></div>
+  <div class="ref-body">
+    <div class="ref-row"><span class="ref-name">Design High-Cardinality Partition Keys</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">The #1 DynamoDB mistake — hot partitions</span></div>
+    <div class="ref-row"><span class="ref-name">Use Query Instead of Scan</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Scan reads every item — 100-1000x more expensive</span></div>
+    <div class="ref-row"><span class="ref-name">Design GSIs to Avoid Back-Pressure</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">GSI throttling back-pressures the base table</span></div>
+    <div class="ref-row"><span class="ref-name">Avoid Hot Partitions</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Write sharding for high-throughput keys</span></div>
+    <div class="ref-row"><span class="ref-name">Retry UnprocessedItems in Batch Ops</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Ignoring them silently drops writes</span></div>
+    <div class="ref-row"><span class="ref-name">Always Paginate Query Results</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">DynamoDB returns max 1 MB per request</span></div>
+    <div class="ref-row"><span class="ref-name">Filter Expressions Don't Reduce Cost</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Filters apply after reads, not before</span></div>
+    <div class="ref-row"><span class="ref-name">Single-Table vs Multi-Table Design</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Decision framework based on access patterns</span></div>
+    <div class="ref-row"><span class="ref-name">Use Transactions for Multi-Item ACID</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">2x cost — don't waste on single-item ops</span></div>
+    <div class="ref-row"><span class="ref-name">Use TTL for Automatic Expiration</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Free and automatic vs expensive manual deletion</span></div>
+    <div class="ref-row"><span class="ref-name">Handle DynamoDB Streams Errors</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Prevent infinite retry loops and data loss</span></div>
+    <div class="ref-row"><span class="ref-name">Provisioning Gotchas</span><span class="ref-impact"><span class="impact-medium">MEDIUM</span></span><span class="ref-desc">Capacity modes, auto-scaling lag, PITR</span></div>
+  </div></div>
+
+  <div class="ref-section anim"><div class="ref-header"><h3>🟣 aws-aurora <span class="ref-count">11 references</span></h3><span class="chevron">▾</span></div>
+  <div class="ref-body">
+    <div class="ref-row"><span class="ref-name">Use Reader Endpoints for Reads</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Reduces writer load by 50-80%</span></div>
+    <div class="ref-row"><span class="ref-name">Use RDS Proxy for Lambda</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Eliminates connection exhaustion</span></div>
+    <div class="ref-row"><span class="ref-name">Set Serverless v2 Min ACU Correctly</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Cold buffer cache causes 10-100x latency spike</span></div>
+    <div class="ref-row"><span class="ref-name">Respect Connection Limits</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Exceeding max_connections = instant errors</span></div>
+    <div class="ref-row"><span class="ref-name">Auto-Scale Read Replicas</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Handle traffic spikes automatically</span></div>
+    <div class="ref-row"><span class="ref-name">Avoid Long-Running Transactions on Replicas</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">MVCC history retention degrades writer</span></div>
+    <div class="ref-row"><span class="ref-name">Use Performance Insights</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Find actual slow queries instead of guessing</span></div>
+    <div class="ref-row"><span class="ref-name">Handle Failover with Retry Logic</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Unhandled failover = 30-60s downtime</span></div>
+    <div class="ref-row"><span class="ref-name">Aurora Storage and I/O Costs</span><span class="ref-impact"><span class="impact-medium">MEDIUM</span></span><span class="ref-desc">Wrong storage type can double I/O costs</span></div>
+    <div class="ref-row"><span class="ref-name">Global Database for Cross-Region DR</span><span class="ref-impact"><span class="impact-medium">MEDIUM</span></span><span class="ref-desc">&lt;1 second replication lag across regions</span></div>
+    <div class="ref-row"><span class="ref-name">Provisioning Gotchas</span><span class="ref-impact"><span class="impact-medium">MEDIUM</span></span><span class="ref-desc">Instance class, encryption, parameter groups</span></div>
+  </div></div>
+
+  <div class="ref-section anim"><div class="ref-header"><h3>🟢 aws-databases <span class="ref-count">4 references</span></h3><span class="chevron">▾</span></div>
+  <div class="ref-body">
+    <div class="ref-row"><span class="ref-name">Choosing the Right AWS Database</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Decision matrix for 6 AWS database services</span></div>
+    <div class="ref-row"><span class="ref-name">IAM Database Authentication</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Eliminates password management</span></div>
+    <div class="ref-row"><span class="ref-name">VPC Connectivity</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Security groups, subnet groups, VPC endpoints</span></div>
+    <div class="ref-row"><span class="ref-name">AWS SDK Configuration</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Retries, timeouts, connection pooling</span></div>
+  </div></div>
+</div>
+</section>
+
+<!-- COMING SOON -->
+<section class="coming-soon" style="padding:100px 24px">
+<div class="container">
+  <div class="section-label anim">Roadmap</div>
+  <div class="section-title anim">More skills coming soon</div>
+  <div class="section-desc anim">We're building skills for every major AWS database service.</div>
+  <div class="coming-grid">
+    <div class="coming-card anim"><div class="coming-badge">Coming Soon</div><h3>aws-neptune</h3><p>Graph database best practices — Gremlin, openCypher, data modeling</p></div>
+    <div class="coming-card anim"><div class="coming-badge">Coming Soon</div><h3>aws-documentdb</h3><p>MongoDB-compatible document database — queries, indexes, aggregation</p></div>
+    <div class="coming-card anim"><div class="coming-badge">Coming Soon</div><h3>aws-dsql</h3><p>Distributed SQL — multi-region, strong consistency, PostgreSQL-compatible</p></div>
   </div>
-
-  <!-- DynamoDB -->
-  <div class="ref-section">
-    <div class="ref-header">
-      <h3>🔵 aws-dynamodb <span class="ref-count">12 references</span></h3>
-      <span class="chevron">▾</span>
-    </div>
-    <div class="ref-body">
-      <div class="ref-row"><span class="ref-name">Design High-Cardinality Partition Keys</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">The #1 DynamoDB mistake — hot partitions</span></div>
-      <div class="ref-row"><span class="ref-name">Use Query Instead of Scan</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Scan reads every item — 100-1000x more expensive</span></div>
-      <div class="ref-row"><span class="ref-name">Design GSIs to Avoid Back-Pressure</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">GSI throttling back-pressures the base table</span></div>
-      <div class="ref-row"><span class="ref-name">Avoid Hot Partitions</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Write sharding for high-throughput keys</span></div>
-      <div class="ref-row"><span class="ref-name">Retry UnprocessedItems in Batch Ops</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Ignoring them silently drops writes</span></div>
-      <div class="ref-row"><span class="ref-name">Always Paginate Query Results</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">DynamoDB returns max 1 MB per request</span></div>
-      <div class="ref-row"><span class="ref-name">Filter Expressions Don't Reduce Cost</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Filters apply after reads, not before</span></div>
-      <div class="ref-row"><span class="ref-name">Single-Table vs Multi-Table Design</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Decision framework based on access patterns</span></div>
-      <div class="ref-row"><span class="ref-name">Use Transactions for Multi-Item ACID</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">2x cost — don't waste on single-item ops</span></div>
-      <div class="ref-row"><span class="ref-name">Use TTL for Automatic Expiration</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Free and automatic vs expensive manual deletion</span></div>
-      <div class="ref-row"><span class="ref-name">Handle DynamoDB Streams Errors</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Prevent infinite retry loops and data loss</span></div>
-      <div class="ref-row"><span class="ref-name">Provisioning Gotchas</span><span class="ref-impact"><span class="impact-medium">MEDIUM</span></span><span class="ref-desc">Capacity modes, auto-scaling lag, PITR</span></div>
-    </div>
-  </div>
-
-  <!-- Aurora -->
-  <div class="ref-section">
-    <div class="ref-header">
-      <h3>🟣 aws-aurora <span class="ref-count">11 references</span></h3>
-      <span class="chevron">▾</span>
-    </div>
-    <div class="ref-body">
-      <div class="ref-row"><span class="ref-name">Use Reader Endpoints for Reads</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Reduces writer load by 50-80%</span></div>
-      <div class="ref-row"><span class="ref-name">Use RDS Proxy for Lambda</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Eliminates connection exhaustion</span></div>
-      <div class="ref-row"><span class="ref-name">Set Serverless v2 Min ACU Correctly</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Cold buffer cache causes 10-100x latency spike</span></div>
-      <div class="ref-row"><span class="ref-name">Respect Connection Limits</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Exceeding max_connections = instant errors</span></div>
-      <div class="ref-row"><span class="ref-name">Auto-Scale Read Replicas</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Handle traffic spikes automatically</span></div>
-      <div class="ref-row"><span class="ref-name">Avoid Long-Running Transactions on Replicas</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">MVCC history retention degrades writer</span></div>
-      <div class="ref-row"><span class="ref-name">Use Performance Insights</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Find actual slow queries instead of guessing</span></div>
-      <div class="ref-row"><span class="ref-name">Handle Failover with Retry Logic</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Unhandled failover = 30-60s downtime</span></div>
-      <div class="ref-row"><span class="ref-name">Aurora Storage and I/O Costs</span><span class="ref-impact"><span class="impact-medium">MEDIUM</span></span><span class="ref-desc">Wrong storage type can double I/O costs</span></div>
-      <div class="ref-row"><span class="ref-name">Global Database for Cross-Region DR</span><span class="ref-impact"><span class="impact-medium">MEDIUM</span></span><span class="ref-desc">&lt;1 second replication lag across regions</span></div>
-      <div class="ref-row"><span class="ref-name">Provisioning Gotchas</span><span class="ref-impact"><span class="impact-medium">MEDIUM</span></span><span class="ref-desc">Instance class, encryption, parameter groups</span></div>
-    </div>
-  </div>
-
-  <!-- aws-databases -->
-  <div class="ref-section">
-    <div class="ref-header">
-      <h3>🟢 aws-databases <span class="ref-count">4 references</span></h3>
-      <span class="chevron">▾</span>
-    </div>
-    <div class="ref-body">
-      <div class="ref-row"><span class="ref-name">Choosing the Right AWS Database</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Decision matrix for 6 AWS database services</span></div>
-      <div class="ref-row"><span class="ref-name">IAM Database Authentication</span><span class="ref-impact"><span class="impact-critical">CRITICAL</span></span><span class="ref-desc">Eliminates password management</span></div>
-      <div class="ref-row"><span class="ref-name">VPC Connectivity</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Security groups, subnet groups, VPC endpoints</span></div>
-      <div class="ref-row"><span class="ref-name">AWS SDK Configuration</span><span class="ref-impact"><span class="impact-high">HIGH</span></span><span class="ref-desc">Retries, timeouts, connection pooling</span></div>
-    </div>
-  </div>
-
 </div>
 </section>
 
 <!-- CTA -->
-<section style="text-align:center;padding:100px 24px;background:var(--bg2)">
-  <div class="section-title" style="margin-bottom:16px">Ready to ship better database code?</div>
-  <p style="color:var(--text2);font-size:18px;margin-bottom:32px;max-width:500px;margin-left:auto;margin-right:auto">Install in seconds. Works with every major AI coding agent. MIT licensed.</p>
-  <div class="install-box" style="margin:0 auto 32px">
+<section class="cta" style="padding:100px 24px">
+  <div class="section-title anim">Ready to ship better database code?</div>
+  <p class="anim" style="color:var(--text2);font-size:18px;margin-bottom:32px;max-width:500px;margin-left:auto;margin-right:auto">Install in seconds. Works with every major AI coding agent. MIT licensed.</p>
+  <div class="install-box anim" style="margin:0 auto 32px;animation:none">
     <div class="install-header">
-      <div class="install-dot"></div><div class="install-dot"></div><div class="install-dot"></div>
+      <div class="install-dot dot-red"></div><div class="install-dot dot-yellow"></div><div class="install-dot dot-green"></div>
       <span>Terminal</span>
     </div>
     <div class="install-body">
@@ -265,7 +244,7 @@
       <div class="cmd">npx skills add meet-bhagdev/aws-database-agent-skills --skill aws-databases</div>
     </div>
   </div>
-  <div class="hero-actions">
+  <div class="hero-actions anim">
     <a href="https://github.com/meet-bhagdev/aws-database-agent-skills" class="btn btn-primary" target="_blank">⭐ Star on GitHub</a>
     <a href="https://github.com/meet-bhagdev/aws-database-agent-skills/blob/main/CONTRIBUTING.md" class="btn btn-secondary" target="_blank">Contribute</a>
   </div>
@@ -273,10 +252,15 @@
 
 <footer>
   <div class="container">
-    <p>AWS Database Agent Skills · <a href="https://github.com/meet-bhagdev/aws-database-agent-skills">Open Source</a> · MIT License · Built with the <a href="https://agentskills.io/">Agent Skills</a> open standard</p>
+    <div class="footer-links">
+      <a href="https://github.com/meet-bhagdev/aws-database-agent-skills">GitHub</a>
+      <a href="https://github.com/meet-bhagdev/aws-database-agent-skills/blob/main/CONTRIBUTING.md">Contributing</a>
+      <a href="https://agentskills.io/">Agent Skills Standard</a>
+      <a href="https://github.com/meet-bhagdev/aws-database-agent-skills/blob/main/LICENSE">MIT License</a>
+    </div>
+    <p>AWS Database Agent Skills · Open Source</p>
   </div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
